@@ -1,5 +1,7 @@
 package za.co.marlonmagonjo;
 
+// Functional Interfaces - these are interfaces with a single method
+@FunctionalInterface
 interface MyMath{
     int add(int a, int b);
 }
@@ -29,6 +31,10 @@ public class LambdaExpression {
         // Lambda
         MyMath m3 = (a, b ) -> a + b;
         System.out.println(m3.add(30, 40));
+
+        // Method References
+        MyMath m4 = Integer::sum;
+        System.out.println(m4.add(40, 50));
 
     }
 }
