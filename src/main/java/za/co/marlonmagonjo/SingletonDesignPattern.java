@@ -2,7 +2,7 @@ package za.co.marlonmagonjo;
 // non-static method means you need an object
 class Sample{
 
-    // Create a static Sample instance to allow creation of one instance copy of Sample
+    // Create a static Sample instance to allow creation of one instance copy of Sample - this is called eager loading
     private static final Sample instance = new Sample();
 
     // To make a class/object singleton you can make the constructor private
