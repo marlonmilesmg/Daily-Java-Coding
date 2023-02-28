@@ -13,11 +13,18 @@ class SampleClass implements Serializable {
     }
 
     // Create a static SampleClass instance to allow creation of one instance copy of SampleClass only when it is needed - this is called lazy loading
-    private static SampleClass instanceSample = null;
+    private static volatile SampleClass instanceSample = null;
 
     public static SampleClass getInstance(){
+        // double checking - threadsafety
         if(instanceSample == null){
-            instanceSample = new SampleClass();
+            // synchronize is used to handle multithreading (it locks the object)
+            synchronized (SampleClass.class){
+                if(instanceSample == null){
+                    // lazy loading
+                    instanceSample = new SampleClass();
+                }
+            }
         }
         return instanceSample;
     }
