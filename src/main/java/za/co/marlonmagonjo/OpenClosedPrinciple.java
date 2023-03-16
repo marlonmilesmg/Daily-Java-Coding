@@ -1,12 +1,16 @@
 package za.co.marlonmagonjo;
 
-//    S - Single Responsibility Principle -
-//        A class should have one and only one reason to change
-//
-//    O - Open Closed Principle -
-//        Objects or entities should be open for extension but closed for modification
-//
-//    L -
+/**
+     S - Single Responsibility Principle -
+            A class should have one and only one reason to change
+
+     O - Open Closed Principle -
+            Objects or entities should be open for extension but closed for modification
+
+     L - Liskov Substitution Principle
+            Objects of super class shall be replaced with objects of subclasses - new code or features must not break existing fuctionality
+
+ */
 
 class AscComparator implements ValueComparator {
 
