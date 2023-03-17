@@ -10,6 +10,9 @@ package za.co.marlonmagonjo;
      L - Liskov Substitution Principle
             Objects of super class shall be replaced with objects of subclasses - new code or features must not break existing fuctionality
 
+     I - Interface Segregation Principle
+            A client should never be forced to implement an interface that it does not use
+
  */
 
 class Vehicle {
