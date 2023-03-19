@@ -13,6 +13,9 @@ package za.co.marlonmagonjo;
      I - Interface Segregation Principle
             A client should never be forced to implement an interface that it does not use
 
+     D - Dependency Inversion Principle
+            High level modules should not directly depend on low level modules, instead they should depend on abstractions.
+
  */
 interface NonVegRestaurant{
     void nonVegMeals();
