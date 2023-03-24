@@ -18,5 +18,11 @@ public class Map {
             Integer price = fruitMap.get(key);
             System.out.println(key + " -- " + price);
         }
+        System.out.println("==================================");
+
+        for(Integer value : fruitMap.values()){
+            System.out.println(value);
+        }
+
     }
 }
