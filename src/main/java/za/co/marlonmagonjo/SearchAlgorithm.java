@@ -1,5 +1,10 @@
 package za.co.marlonmagonjo;
 
+/**
+ *  At a high level it uses abstract base class with the core algorithm while abstracting out certain portions of the algorithm for subclass to define.
+ *  Example in case of search algorithm or sort algorithm we can abstract out the value comparison logic so that the subclasses can override it.
+ */
+
 import java.util.Scanner;
 
 // an example of Template Method
