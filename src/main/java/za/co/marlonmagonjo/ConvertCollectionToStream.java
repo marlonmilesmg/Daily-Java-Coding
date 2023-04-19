@@ -1,5 +1,27 @@
 package za.co.marlonmagonjo;
 
+/**
+ *  Stream Sources -
+ *      Collection -
+ *        stream()
+ *            - sequential stream of elements in a collection
+ *      Arrays -
+ *        stream()
+ *            - sequential stream of elements of an array
+ *
+ *      Files class -
+ *        lines()
+ *            - A stream of lines from the given file
+ *
+ *  Static methods of the Stream class -
+ *
+ *      concat(Stream, Stream) - for concatenated streams
+ *      of(T... values) - values of stream
+ *      generate(Supplier) - Infinite stream
+ *
+ *      range(int, int) or rangeClosed(int, int) - range of values (only for IntStream)
+ */
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
