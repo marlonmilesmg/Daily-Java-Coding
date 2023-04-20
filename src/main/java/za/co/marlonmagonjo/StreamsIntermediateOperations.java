@@ -2,6 +2,15 @@ package za.co.marlonmagonjo;
 
 import java.util.Arrays;
 
+/**
+ *  Intermediate Operations -
+ *      Filtering and Mapping
+ *          distinct() - returns a stream with no duplicates
+ *          filter(Predicate) - returns a stream of elements which only those elements for which the predicate returns true
+ *          map(Function) - returns a stream where the given function is applied on each element of input stream
+ *          mapToInt(), mapToDouble(), mapToLong() - produces the stream of primitives not objects
+ */
+
 public class StreamsIntermediateOperations {
     public static void main(String[] args) {
         int [] arr = {1, 1, 2, 3, 4, 4, 5, 6};
