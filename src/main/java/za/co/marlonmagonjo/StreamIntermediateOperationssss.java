@@ -9,7 +9,7 @@ import java.util.Arrays;
  *          - sorted() - return stream sorted using natural order
  */
 
-public class IntermediateStreamOperationssss {
+public class StreamIntermediateOperationssss {
     public static void main(String[] args) {
         String [] arr = {"ab", "a", "xy", "bc"};
 
