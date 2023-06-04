@@ -21,6 +21,12 @@ package za.co.marlonmagonjo;
 
 public class Packages {
     public static void main(String[] args) {
+        za.co.marlonmagonjo.packages.demo.service.AccountService accountService = new za.co.marlonmagonjo.packages.demo.service.AccountService();
 
+        accountService.openAccount();
+
+        za.co.marlonmagonjo.packages.demo.service.CardService cardService = new za.co.marlonmagonjo.packages.demo.service.CardService();
+
+        cardService.newCard();
     }
 }
