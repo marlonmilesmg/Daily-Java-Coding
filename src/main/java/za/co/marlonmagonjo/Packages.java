@@ -1,4 +1,9 @@
 package za.co.marlonmagonjo;
+import za.co.marlonmagonjo.packages.demo.service.AccountService;
+import za.co.marlonmagonjo.packages.demo.service.CardService;
+import za.co.marlonmagonjo.packages.demo.util.DateUtil;
+import java.util.Date;
+import static java.lang.System.out;
 
 /**
  *
@@ -21,12 +26,14 @@ package za.co.marlonmagonjo;
 
 public class Packages {
     public static void main(String[] args) {
-        za.co.marlonmagonjo.packages.demo.service.AccountService accountService = new za.co.marlonmagonjo.packages.demo.service.AccountService();
-
+        AccountService accountService = new AccountService();
         accountService.openAccount();
 
-        za.co.marlonmagonjo.packages.demo.service.CardService cardService = new za.co.marlonmagonjo.packages.demo.service.CardService();
-
+        CardService cardService = new CardService();
         cardService.newCard();
+
+        System.out.println(DateUtil.formartDate(new Date()));
+
+        out.println("This is because of the static import");
     }
 }
