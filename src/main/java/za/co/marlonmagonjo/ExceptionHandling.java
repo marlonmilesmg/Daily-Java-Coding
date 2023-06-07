@@ -21,6 +21,12 @@ package za.co.marlonmagonjo;
  *
  *      IllegalArgumentException: Thrown when a method receives an illegal or inappropriate argument.
  *
+ *      ClassCastException: Thrown when an object is attempted to be cast to an incompatible class.
+ *
+ *      UnsupportedOperationException: Thrown when an unsupported operation is invoked on an object.
+ *
+ *      SecurityException: Thrown when a security violation occurs.
+ *
  *      RuntimeException: The superclass for all exceptions that can occur during the normal operation of the Java Virtual Machine. It includes exceptions such as NullPointerException, ArrayIndexOutOfBoundsException, and ArithmeticException.
  *
  */
