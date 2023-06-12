@@ -9,6 +9,7 @@ package za.co.marlonmagonjo.questionandanswer;
  *      The servlet can extract the submitted data using methods like getParameter() to retrieve individual form fields or getParameterValues() to retrieve multiple values from checkboxes or select lists.
  *      By using servlets, developers can receive and process data submitted by HTML forms, perform server-side operations, and generate appropriate responses to the user.
  *
+ *
  *  What is Java EE and what are its key components?
  *      Java EE (Java Enterprise Edition) is a platform that provides a collection of specifications and APIs for developing enterprise-level, distributed, and scalable applications in Java. 
  *      It offers a robust and standardized framework for building enterprise software systems.
@@ -40,8 +41,26 @@ package za.co.marlonmagonjo.questionandanswer;
  *      These components work together to provide a comprehensive and standardized platform for building enterprise applications in Java.
  *
  *
+ *  Explain the concept of EJB (Enterprise JavaBeans) and its different types.
  *
+ *      Enterprise JavaBeans (EJB) is a server-side component model provided by Java EE for building distributed and scalable enterprise applications. 
+ *      EJBs encapsulate business logic and are managed by the EJB container, which provides services such as lifecycle management, concurrency control, and transaction management.
  *
+ *      There are three types of EJBs:
+ *
+ *      1. Session Beans: Session beans represent business logic and are used to perform specific tasks or operations in an application. They are not persistent and do not represent data entities. Session beans can be further categorized into two types:
+ *
+ *         a. Stateful Session Beans: Stateful session beans maintain conversational state and are associated with a specific client for the duration of a session. They are suitable for maintaining client-specific data and stateful interactions.
+ *
+ *         b. Stateless Session Beans: Stateless session beans do not maintain conversational state and are not tied to a specific client. They are designed for handling independent, stateless operations and are more scalable than stateful beans.
+ *
+ *      2. Entity Beans (Deprecated in Java EE 7): Entity beans represented persistent data entities and were used for Object-Relational Mapping (ORM) with a relational database. However, with the introduction of the Java Persistence API (JPA), entity beans were deprecated in Java EE 7, and developers are encouraged to use JPA for persistence operations.
+ *
+ *      3. Message-Driven Beans: Message-driven beans (MDBs) are used for asynchronous processing and communication using the Java Message Service (JMS). They are designed to consume and process messages from a message queue or topic asynchronously. MDBs are often used in event-driven architectures and message-oriented middleware.
+ *
+ *      EJBs provide a range of features such as declarative transaction management, security, and concurrency control. They can be accessed locally within the same Java Virtual Machine (JVM) or remotely from other JVMs, making them suitable for distributed and modular applications.
+ *
+ *      Overall, EJBs simplify the development of enterprise applications by providing a standardized and scalable approach to encapsulating business logic and integrating with other Java EE technologies.
  *
  *
  *
