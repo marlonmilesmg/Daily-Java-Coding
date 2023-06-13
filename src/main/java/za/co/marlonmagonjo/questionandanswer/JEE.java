@@ -63,6 +63,23 @@ package za.co.marlonmagonjo.questionandanswer;
  *      Overall, EJBs simplify the development of enterprise applications by providing a standardized and scalable approach to encapsulating business logic and integrating with other Java EE technologies.
  *
  *
+ *  What is the purpose of JPA (Java Persistence API) and how does it relate to the Java EE architecture?
+ *
+ *      The purpose of the Java Persistence API (JPA) is to provide a framework for object-relational mapping (ORM) in Java applications. 
+ *      It allows developers to map Java objects to relational database tables, providing a convenient way to store, retrieve, and manipulate data using object-oriented programming techniques.
+ *
+ *      JPA simplifies the process of interacting with databases by abstracting away the low-level details of JDBC (Java Database Connectivity) code. 
+ *      It provides a set of annotations and APIs that developers can use to define the mapping between Java classes and database tables. With JPA, developers can perform CRUD (Create, Read, Update, Delete) operations on objects without writing explicit SQL queries.
+ *
+ *      JPA is part of the Java EE (Enterprise Edition) architecture, which is a collection of specifications and APIs for building enterprise applications in Java. 
+ *      Java EE provides a standardized and scalable platform for developing robust, distributed, and multi-tiered applications. 
+ *      JPA is one of the Java EE specifications that focuses on the persistence layer of an application, allowing developers to easily integrate database operations into their Java EE applications.
+ *
+ *      JPA works seamlessly with other Java EE technologies such as servlets, JavaServer Faces (JSF), Enterprise JavaBeans (EJB), and Java Transaction API (JTA). 
+ *      It provides integration points with these technologies, allowing developers to leverage the power of JPA in their Java EE applications. 
+ *      For example, JPA can be used within EJBs to handle database persistence, or it can be used in conjunction with JTA for managing transactions across multiple data sources.
+ *
+ *      Overall, JPA simplifies database access in Java applications by providing a high-level abstraction layer, and its integration with Java EE enables developers to build robust and scalable enterprise applications.
  *
  */
 public class JEE {
