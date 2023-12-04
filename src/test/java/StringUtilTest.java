@@ -45,4 +45,17 @@ public class StringUtilTest {
                 Arguments.of("The financial markets are", 0)
         );
     }
+
+    @ParameterizedTest
+    @MethodSource("shortInputLessOrEqualToEllipsis")
+    public void inputShorterOrEqualThanLimit_StringIsNotChanged(){
+
+    }
+
+    public static Stream<Arguments> shortInputLessOrEqualToEllipsis(){
+        return Stream.of(
+                Arguments.of("The", 2),
+                Arguments.of("The", 3)
+        );
+    }
 }

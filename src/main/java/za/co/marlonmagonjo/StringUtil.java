@@ -11,6 +11,10 @@ public class StringUtil {
         if(input.length() <= limit){
             return input;
         }
-        return input.substring(0, limit) + "...";
+        String ellipsis = "...";
+        if(input.length() <= ellipsis.length()){
+            return input;
+        }
+        return input.substring(0, limit) + ellipsis;
     }
 }
