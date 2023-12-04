@@ -25,9 +25,24 @@ public class StringUtilTest {
     }
 
     public static Stream<Arguments> inputOutputLimitProvider(){
+        String input = "The economy is about to";
         return Stream.of(
-                Arguments.of("The economy is about to", 40),
-                Arguments.of("The economy is about to", 23)
+                Arguments.of(input, 40),
+                Arguments.of(input, input.length())
+        );
+    }
+
+    @ParameterizedTest
+    @MethodSource("invalidArgumentProvider")
+    public void invalidInput_isRejected(){
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> StringUtil.truncate(null, 5));
+    }
+
+    public static Stream<Arguments> invalidArgumentProvider(){
+        return Stream.of(
+                Arguments.of(null, 5),
+                Arguments.of("The financial markets are", 0)
         );
     }
 }
