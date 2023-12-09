@@ -1,17 +1,24 @@
 package za.co.marlonmagonjo;
 
-public class Portfolio {
-    double totalValue;
-    Stock symbol;
+import java.util.ArrayList;
+import java.util.List;
 
+public class Portfolio {
+    List<Stock> stocks = new ArrayList<>();
+
+    public void printPortfolio(){
+        stocks.forEach(System.out::println);
+    }
     public void add(Stock symbol) {
-        this.symbol = symbol;
+        stocks.add(symbol);
     }
     public double totalValue() {
-        if(symbol == null){
+        if(stocks.isEmpty()){
             return 0;
         }
-        return symbol.totalValue();
+        return stocks.stream()
+                .mapToDouble(Stock::totalValue)
+                .sum();
     }
 
 }
