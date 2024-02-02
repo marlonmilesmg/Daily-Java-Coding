@@ -5,29 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Employeeee {
-    private String name;
-    private String department;
-    private double salary;
-
-    public Employeeee(String name, String department, double salary) {
-        this.name = name;
-        this.department = department;
-        this.salary = salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-}
 
 public class HighestPaidEmployee {
     public static void main(String[] args) {
