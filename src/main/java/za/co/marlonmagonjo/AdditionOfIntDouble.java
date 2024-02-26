@@ -2,6 +2,15 @@ package za.co.marlonmagonjo;
 
 public class AdditionOfIntDouble {
 
+    /**
+     * The time complexity of the provided method is O(n), where "n" is the number of elements in the array "a."
+     * The method iterates through each element of the array once, performing a constant-time operation for each element
+     * (adding its double value to the running sum). As a result, the time complexity is linear with respect to the size of the array.
+     *
+     * @param a
+     * @return
+     * @param <T>
+     */
     @SafeVarargs
     static <T extends Number> double sum(T ... a){
         double s = 0;
