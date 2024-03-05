@@ -23,6 +23,12 @@ public class StringCompression {
      *         otherwise, returns "0" to indicate no compression benefit.
      */
     public static String compressString(String s) {
+
+        // Handle edge case for an empty string
+        if (s == null || s.isEmpty()) {
+            return "0";
+        }
+
         // StringBuilder to store the compressed string
         StringBuilder compressed = new StringBuilder();
 
